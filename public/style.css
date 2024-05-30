@@ -2,15 +2,18 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFE4B5; /* Light orange background */
+    background-color: #db5c12; /* Light orange background */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #FF6347; /* Tomato red navbar */
+    background-color: #4f3f3c;
     padding: 20px 0;
+    border-radius: 25px;
+    border: 2px solid #ad6221;
 }
+
 
 nav ul {
     list-style-type: none;
@@ -42,6 +45,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 150px); /* Subtract header and footer height */
+    background-color:rgb(8, 70, 70)
 }
 
 .container {
@@ -54,7 +58,17 @@ footer {
     padding: 20px 0;
     color: #fff;
 }
-.user-input textarea: {
+.user-input {
     width: 50px;
-    
+
+}
+#color-text {
+
+    color: rgb(168, 168, 168);
+}
+
+#user-input-container {
+
+
+    width: 50px;
 }

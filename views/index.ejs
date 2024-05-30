@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEOCODE Chatbot</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <header>
@@ -23,13 +23,13 @@
         <div class="container">
             <div class="chat-container">
                 <div id="chat-header" class="header">
-                    <h2>LEOCODE Chatbot</h2>
+                    <h2 id="color-text">LEOCODE Chatbot</h2>
                 </div>
                 <div id="chat-window">
                     <div id="chat-messages"></div>
                 </div>
                 <div id="user-input-container">
-                    <input type="text" id="user-input" placeholder="Type your message...">
+                    <textarea  rows="4" cols="50" id="user-input" placeholder="Type your message..."></textarea>
                     <button onclick="sendMessage()">Send</button>
                 </div>
             </div>
@@ -55,7 +55,7 @@
             displayMessage('bot', data);
             document.getElementById('user-input').value = '';
         }
-    
+
         function displayMessage(role, content) {
             const chatMessages = document.getElementById('chat-messages');
             const messageDiv = document.createElement('div');

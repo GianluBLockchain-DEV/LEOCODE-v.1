@@ -30,7 +30,7 @@ app.post('/chat', async (req, res) => {
         },
         { role: 'user', content: message }
       ],
-      model: 'gpt-4',
+      model: 'gpt-4o',
       response_format: { type: 'text' } // Set response format to plaintext
     });
     const responseData = completion.choices[0].message.content;
